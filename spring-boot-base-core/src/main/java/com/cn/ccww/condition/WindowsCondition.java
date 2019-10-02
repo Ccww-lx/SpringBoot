@@ -1,6 +1,6 @@
 package com.cn.ccww.condition;
 
-import com.cn.ccww.service.BaseWindowsService;
+import com.cn.ccww.service.BaseStarterService;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.RootBeanDefinition;
@@ -37,11 +37,10 @@ public class WindowsCondition implements Condition {
             boolean isWindowsSevice = registry.containsBeanDefinition("baseWindowsSevice");
             if(!isWindowsSevice){
                 //指定Bean定义信息；（Bean的类型，Bean的一系列信息）
-                RootBeanDefinition beanDefinition = new RootBeanDefinition(BaseWindowsService.class);
+                RootBeanDefinition beanDefinition = new RootBeanDefinition(BaseStarterService.class);
                 //注册一个Bean，指定bean名
                 registry.registerBeanDefinition("baseWindowsSevice", beanDefinition);
-                BaseWindowsService windowsSevice = (BaseWindowsService)beanFactory.getBean("baseWindowsSevice");
-                windowsSevice.addServiceName("ccww---baseWindowsSevice");
+                BaseStarterService windowsSevice = (BaseStarterService)beanFactory.getBean("baseWindowsSevice");
             }
             return true;
         }

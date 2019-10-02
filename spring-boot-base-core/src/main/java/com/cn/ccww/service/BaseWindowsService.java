@@ -11,11 +11,11 @@ import org.springframework.lang.Nullable;
 
 public class BaseWindowsService {
 
-    private String seviceName;
+    private String serviceName;
 
-    public void addServiceName(String seviceName){
-        this.seviceName=seviceName;
-        System.out.println("seviceName:"+seviceName);
+    public void addServiceName(String serviceName){
+        this.serviceName=serviceName;
+        System.out.println("serviceName:"+serviceName);
     }
 
 }

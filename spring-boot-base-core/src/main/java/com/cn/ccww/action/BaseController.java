@@ -50,4 +50,14 @@ public class BaseController {
         return stringBuffer.toString();
     }
 
+    /**
+     * test 自定义starter
+     * @return
+     */
+    @RequestMapping(value = "/ccww/getPassword",method = RequestMethod.GET)
+    public String getPassword(){
+        String password = baseService.testPassorsStarter();
+        System.out.println(password);
+        return password;
+    }
 }

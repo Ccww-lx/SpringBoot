@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * Created by ccww on 2019/9/28.
  */
-@SpringBootApplication(scanBasePackages = {"com.cn.ccww.*"})
+@SpringBootApplication
 public class BaseSpringBootApplication {
 
     public static void main(String[] args) {

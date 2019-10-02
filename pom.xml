@@ -9,7 +9,8 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>springboot_basecore</module>
+        <module>spring-boot-base-core</module>
+        <module>spring-boot-starter-base-service</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -34,7 +35,11 @@
                 <artifactId>spring-boot-autoconfigure</artifactId>
                 <version>2.1.5.RELEASE</version>
             </dependency>
-
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.11</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <dependencies>
@@ -49,12 +54,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-autoconfigure</artifactId>
-        </dependency>
     </dependencies>
-
 
 </project>
