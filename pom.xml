@@ -11,6 +11,7 @@
     <modules>
         <module>spring-boot-base-core</module>
         <module>spring-boot-starter-base-service</module>
+        <module>spring-boot-base-web</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
