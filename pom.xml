@@ -12,6 +12,8 @@
         <module>spring-boot-base-core</module>
         <module>spring-boot-starter-base-service</module>
         <module>spring-boot-base-web</module>
+        <module>spring-boot-base-web-socket</module>
+        <module>spring-boot-base-mongodb</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
