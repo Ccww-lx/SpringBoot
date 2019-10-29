@@ -34,7 +34,7 @@ public class RestTemplateConfig {
     //@LoadBalanced
     public RestTemplate restTemplate( ClientHttpRequestFactory simleClientHttpRequestFactory) {
         RestTemplate restTemplate = new RestTemplate();
-     /*   //配置自定义的message转换器
+        //配置自定义的message转换器
         List<HttpMessageConverter<?>> messageConverters = restTemplate.getMessageConverters();
         messageConverters.add(new CustomMappingJackson2HttpMessageConverter());
         restTemplate.setMessageConverters(messageConverters);
@@ -44,7 +44,7 @@ public class RestTemplateConfig {
         interceptors.add(new TrackLogClientHttpRequestInterceptor());
         restTemplate.setInterceptors(interceptors);
         //配置自定义的异常处理
-        restTemplate.setErrorHandler(new CustomResponseErrorHandler());*/
+        restTemplate.setErrorHandler(new CustomResponseErrorHandler());
         restTemplate.setRequestFactory(simleClientHttpRequestFactory);
 
         return restTemplate;
